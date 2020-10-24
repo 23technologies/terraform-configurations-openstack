@@ -1,0 +1,365 @@
+{
+    "max-concurrent-indexers": 4,
+    "dbpath": "/database",
+    "title": "Hound for Gardener",
+    "health-check-uri": "/healthz",
+    "vcs-config": {
+        "git": {
+            "detect-ref": true
+        }
+    },
+    "repos": {
+        "gardener/documentation": {
+            "url": "https://github.com/gardener/documentation.git",
+            "ms-between-poll": 3600000
+        },
+        "gardener/aws-lb-readvertiser": {
+            "url": "https://github.com/gardener/aws-lb-readvertiser.git",
+            "ms-between-poll": 3600000
+        },
+        "gardener/vpn": {
+            "url": "https://github.com/gardener/vpn.git",
+            "ms-between-poll": 3600000
+        },
+        "gardener/terraformer": {
+            "url": "https://github.com/gardener/terraformer.git",
+            "ms-between-poll": 3600000
+        },
+        "gardener/machine-controller-manager": {
+            "url": "https://github.com/gardener/machine-controller-manager.git",
+            "ms-between-poll": 3600000
+        },
+        "gardener/kubify": {
+            "url": "https://github.com/gardener/kubify.git",
+            "ms-between-poll": 3600000
+        },
+        "gardener/ingress-default-backend": {
+            "url": "https://github.com/gardener/ingress-default-backend.git",
+            "ms-between-poll": 3600000
+        },
+        "gardener/kubify-aws-template": {
+            "url": "https://github.com/gardener/kubify-aws-template.git",
+            "ms-between-poll": 3600000
+        },
+        "gardener/gardener": {
+            "url": "https://github.com/gardener/gardener.git",
+            "ms-between-poll": 3600000
+        },
+        "gardener/kubify-openstack-template": {
+            "url": "https://github.com/gardener/kubify-openstack-template.git",
+            "ms-between-poll": 3600000
+        },
+        "gardener/gardenctl": {
+            "url": "https://github.com/gardener/gardenctl.git",
+            "ms-between-poll": 3600000
+        },
+        "gardener/dashboard": {
+            "url": "https://github.com/gardener/dashboard.git",
+            "ms-between-poll": 3600000
+        },
+        "gardener/etcd-backup-restore": {
+            "url": "https://github.com/gardener/etcd-backup-restore.git",
+            "ms-between-poll": 3600000
+        },
+        "gardener/cc-utils": {
+            "url": "https://github.com/gardener/cc-utils.git",
+            "ms-between-poll": 3600000
+        },
+        "gardener/landscape-setup": {
+            "url": "https://github.com/gardener/landscape-setup.git",
+            "ms-between-poll": 3600000
+        },
+        "gardener/landscape-setup-template": {
+            "url": "https://github.com/gardener/landscape-setup-template.git",
+            "ms-between-poll": 3600000
+        },
+        "gardener/logging": {
+            "url": "https://github.com/gardener/logging.git",
+            "ms-between-poll": 3600000
+        },
+        "gardener/autoscaler": {
+            "url": "https://github.com/gardener/autoscaler.git",
+            "ms-between-poll": 3600000
+        },
+        "gardener/gpu-installer": {
+            "url": "https://github.com/gardener/gpu-installer.git",
+            "ms-between-poll": 3600000
+        },
+        "gardener/dnslb-controller-manager": {
+            "url": "https://github.com/gardener/dnslb-controller-manager.git",
+            "ms-between-poll": 3600000
+        },
+        "gardener/website": {
+            "url": "https://github.com/gardener/website.git",
+            "ms-between-poll": 3600000
+        },
+        "gardener/gardener-metrics-exporter": {
+            "url": "https://github.com/gardener/gardener-metrics-exporter.git",
+            "ms-between-poll": 3600000
+        },
+        "gardener/website-generator": {
+            "url": "https://github.com/gardener/website-generator.git",
+            "ms-between-poll": 3600000
+        },
+        "gardener/machine-spec": {
+            "url": "https://github.com/gardener/machine-spec.git",
+            "ms-between-poll": 3600000
+        },
+        "gardener/machine-controller-manager-provider-sampleprovider": {
+            "url": "https://github.com/gardener/machine-controller-manager-provider-sampleprovider.git",
+            "ms-between-poll": 3600000
+        },
+        "gardener/gardener-extension-os-coreos": {
+            "url": "https://github.com/gardener/gardener-extension-os-coreos.git",
+            "ms-between-poll": 3600000
+        },
+        "gardener/controller-manager-library": {
+            "url": "https://github.com/gardener/controller-manager-library.git",
+            "ms-between-poll": 3600000
+        },
+        "gardener/external-dns-management": {
+            "url": "https://github.com/gardener/external-dns-management.git",
+            "ms-between-poll": 3600000
+        },
+        "gardener/machine-controller-manager-provider-aws": {
+            "url": "https://github.com/gardener/machine-controller-manager-provider-aws.git",
+            "ms-between-poll": 3600000
+        },
+        "gardener/test-infra": {
+            "url": "https://github.com/gardener/test-infra.git",
+            "ms-between-poll": 3600000
+        },
+        "gardener/sow": {
+            "url": "https://github.com/gardener/sow.git",
+            "ms-between-poll": 3600000
+        },
+        "gardener/garden-setup": {
+            "url": "https://github.com/gardener/garden-setup.git",
+            "ms-between-poll": 3600000
+        },
+        "gardener/vpa-exporter": {
+            "url": "https://github.com/gardener/vpa-exporter.git",
+            "ms-between-poll": 3600000
+        },
+        "gardener/dependency-watchdog": {
+            "url": "https://github.com/gardener/dependency-watchdog.git",
+            "ms-between-poll": 3600000
+        },
+        "gardener/hvpa-controller": {
+            "url": "https://github.com/gardener/hvpa-controller.git",
+            "ms-between-poll": 3600000
+        },
+        "gardener/certificate-dns-bridge": {
+            "url": "https://github.com/gardener/certificate-dns-bridge.git",
+            "ms-between-poll": 3600000
+        },
+        "gardener/gardener-resource-manager": {
+            "url": "https://github.com/gardener/gardener-resource-manager.git",
+            "ms-between-poll": 3600000
+        },
+        "gardener/vscode-gardener-tools": {
+            "url": "https://github.com/gardener/vscode-gardener-tools.git",
+            "ms-between-poll": 3600000
+        },
+        "gardener/terminal-controller-manager": {
+            "url": "https://github.com/gardener/terminal-controller-manager.git",
+            "ms-between-poll": 3600000
+        },
+        "gardener/hub": {
+            "url": "https://github.com/gardener/hub.git",
+            "ms-between-poll": 3600000
+        },
+        "gardener/cert-management": {
+            "url": "https://github.com/gardener/cert-management.git",
+            "ms-between-poll": 3600000
+        },
+        "gardener/gem": {
+            "url": "https://github.com/gardener/gem.git",
+            "ms-between-poll": 3600000
+        },
+        "gardener/ops-toolbelt": {
+            "url": "https://github.com/gardener/ops-toolbelt.git",
+            "ms-between-poll": 3600000
+        },
+        "gardener/etcd-druid": {
+            "url": "https://github.com/gardener/etcd-druid.git",
+            "ms-between-poll": 3600000
+        },
+        "gardener/k8s-conformance": {
+            "url": "https://github.com/gardener/k8s-conformance.git",
+            "ms-between-poll": 3600000
+        },
+        "gardener/nsxt-lb-provider": {
+            "url": "https://github.com/gardener/nsxt-lb-provider.git",
+            "ms-between-poll": 3600000
+        },
+        "gardener/gardener-extension-sample": {
+            "url": "https://github.com/gardener/gardener-extension-sample.git",
+            "ms-between-poll": 3600000
+        },
+        "gardener/machine-controller-manager-provider-vsphere": {
+            "url": "https://github.com/gardener/machine-controller-manager-provider-vsphere.git",
+            "ms-between-poll": 3600000
+        },
+        "gardener/cloud-provider-aws": {
+            "url": "https://github.com/gardener/cloud-provider-aws.git",
+            "ms-between-poll": 3600000
+        },
+        "gardener/cloud-provider-gcp": {
+            "url": "https://github.com/gardener/cloud-provider-gcp.git",
+            "ms-between-poll": 3600000
+        },
+        "gardener/apiserver-proxy": {
+            "url": "https://github.com/gardener/apiserver-proxy.git",
+            "ms-between-poll": 3600000
+        },
+        "gardener/gardener-extension-os-ubuntu": {
+            "url": "https://github.com/gardener/gardener-extension-os-ubuntu.git",
+            "ms-between-poll": 3600000
+        },
+        "gardener/gardener-extension-provider-mock": {
+            "url": "https://github.com/gardener/gardener-extension-provider-mock.git",
+            "ms-between-poll": 3600000
+        },
+        "gardener/gardener-extension-os-ubuntu-alicloud": {
+            "url": "https://github.com/gardener/gardener-extension-os-ubuntu-alicloud.git",
+            "ms-between-poll": 3600000
+        },
+        "gardener/gardener-extension-os-coreos-alicloud": {
+            "url": "https://github.com/gardener/gardener-extension-os-coreos-alicloud.git",
+            "ms-between-poll": 3600000
+        },
+        "gardener/gardener-extension-os-suse-chost": {
+            "url": "https://github.com/gardener/gardener-extension-os-suse-chost.git",
+            "ms-between-poll": 3600000
+        },
+        "gardener/gardener-extension-networking-calico": {
+            "url": "https://github.com/gardener/gardener-extension-networking-calico.git",
+            "ms-between-poll": 3600000
+        },
+        "gardener/gardener-extension-networking-cilium": {
+            "url": "https://github.com/gardener/gardener-extension-networking-cilium.git",
+            "ms-between-poll": 3600000
+        },
+        "gardener/gardener-extension-shoot-cert-service": {
+            "url": "https://github.com/gardener/gardener-extension-shoot-cert-service.git",
+            "ms-between-poll": 3600000
+        },
+        "gardener/gardener-extension-shoot-dns-service": {
+            "url": "https://github.com/gardener/gardener-extension-shoot-dns-service.git",
+            "ms-between-poll": 3600000
+        },
+        "gardener/gardener-extension-provider-packet": {
+            "url": "https://github.com/gardener/gardener-extension-provider-packet.git",
+            "ms-between-poll": 3600000
+        },
+        "gardener/gardener-extension-provider-vsphere": {
+            "url": "https://github.com/gardener/gardener-extension-provider-vsphere.git",
+            "ms-between-poll": 3600000
+        },
+        "gardener/gardener-extension-provider-azure": {
+            "url": "https://github.com/gardener/gardener-extension-provider-azure.git",
+            "ms-between-poll": 3600000
+        },
+        "gardener/gardener-extension-provider-gcp": {
+            "url": "https://github.com/gardener/gardener-extension-provider-gcp.git",
+            "ms-between-poll": 3600000
+        },
+        "gardener/gardener-extension-provider-openstack": {
+            "url": "https://github.com/gardener/gardener-extension-provider-openstack.git",
+            "ms-between-poll": 3600000
+        },
+        "gardener/gardener-extension-provider-alicloud": {
+            "url": "https://github.com/gardener/gardener-extension-provider-alicloud.git",
+            "ms-between-poll": 3600000
+        },
+        "gardener/gardener-extension-provider-aws": {
+            "url": "https://github.com/gardener/gardener-extension-provider-aws.git",
+            "ms-between-poll": 3600000
+        },
+        "gardener/gardener-extension-runtime-gvisor": {
+            "url": "https://github.com/gardener/gardener-extension-runtime-gvisor.git",
+            "ms-between-poll": 3600000
+        },
+        "gardener/gardener-extension-os-gardenlinux": {
+            "url": "https://github.com/gardener/gardener-extension-os-gardenlinux.git",
+            "ms-between-poll": 3600000
+        },
+        "gardener/cloud-provider-azure": {
+            "url": "https://github.com/gardener/cloud-provider-azure.git",
+            "ms-between-poll": 3600000
+        },
+        "gardener/hyperkube": {
+            "url": "https://github.com/gardener/hyperkube.git",
+            "ms-between-poll": 3600000
+        },
+        "gardener/landscaper": {
+            "url": "https://github.com/gardener/landscaper.git",
+            "ms-between-poll": 3600000
+        },
+        "gardener/kupid": {
+            "url": "https://github.com/gardener/kupid.git",
+            "ms-between-poll": 3600000
+        },
+        "gardener/homebrew-tap": {
+            "url": "https://github.com/gardener/homebrew-tap.git",
+            "ms-between-poll": 3600000
+        },
+        "gardener/machine-controller-manager-provider-kubevirt": {
+            "url": "https://github.com/gardener/machine-controller-manager-provider-kubevirt.git",
+            "ms-between-poll": 3600000
+        },
+        "gardener/machine-controller-manager-provider-gcp": {
+            "url": "https://github.com/gardener/machine-controller-manager-provider-gcp.git",
+            "ms-between-poll": 3600000
+        },
+        "gardener/remedy-controller": {
+            "url": "https://github.com/gardener/remedy-controller.git",
+            "ms-between-poll": 3600000
+        },
+        "gardener/gardener-extension-provider-kubevirt": {
+            "url": "https://github.com/gardener/gardener-extension-provider-kubevirt.git",
+            "ms-between-poll": 3600000
+        },
+        "gardener/component-spec": {
+            "url": "https://github.com/gardener/component-spec.git",
+            "ms-between-poll": 3600000
+        },
+        "gardener/kube-openapi": {
+            "url": "https://github.com/gardener/kube-openapi.git",
+            "ms-between-poll": 3600000
+        },
+        "gardener/reserve-excess-capacity": {
+            "url": "https://github.com/gardener/reserve-excess-capacity.git",
+            "ms-between-poll": 3600000
+        },
+        "gardener/etcd-custom-image": {
+            "url": "https://github.com/gardener/etcd-custom-image.git",
+            "ms-between-poll": 3600000
+        },
+        "gardener/monitoring": {
+            "url": "https://github.com/gardener/monitoring.git",
+            "ms-between-poll": 3600000
+        },
+        "gardener/controller-runtime": {
+            "url": "https://github.com/gardener/controller-runtime.git",
+            "ms-between-poll": 3600000
+        },
+        "gardener/machine-controller-manager-provider-yandex": {
+            "url": "https://github.com/gardener/machine-controller-manager-provider-yandex.git",
+            "ms-between-poll": 3600000
+        },
+        "gardener/machine-controller-manager-provider-alicloud": {
+            "url": "https://github.com/gardener/machine-controller-manager-provider-alicloud.git",
+            "ms-between-poll": 3600000
+        },
+        "gardener/gardener-extension-provider-openshift": {
+            "url": "https://github.com/gardener/gardener-extension-provider-openshift.git",
+            "ms-between-poll": 3600000
+        },
+        "gardener/structured-merge-diff": {
+            "url": "https://github.com/gardener/structured-merge-diff.git",
+            "ms-between-poll": 3600000
+        }
+    }
+}

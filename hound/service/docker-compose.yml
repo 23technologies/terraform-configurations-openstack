@@ -1,0 +1,44 @@
+---
+version: '3.5'
+
+services:
+  traefik:
+    container_name: traefik
+    image: traefik:2.3
+    restart: unless-stopped
+    ports:
+      - 80:80
+      - 443:443
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock:ro
+      - ./configuration/traefik.yml:/etc/traefik/traefik.yml:ro
+      - acme:/etc/traefik/acme
+    labels:
+      - "traefik.enable=true"
+
+  hound:
+    container_name: hound
+    image: etsy/hound
+    restart: unless-stopped
+    command: server /data
+    volumes:
+      - hound:/database
+      - ./configuration/config.json:/data/config.json:ro
+    healthcheck:
+      test: wget -q -O - http://localhost:6080/healthz
+    ports:
+      - 6080:6080
+    labels:
+      - "traefik.enable=true"
+      - "traefik.http.routers.hound.entrypoints=http"
+      - "traefik.http.routers.hound.rule=Host(`gardener.hound.23technologies.dev`)"
+      - "traefik.http.middlewares.hound-https-redirect.redirectscheme.scheme=https"
+      - "traefik.http.routers.hound.middlewares=hound-https-redirect"
+      - "traefik.http.routers.hound-secure.entrypoints=https"
+      - "traefik.http.routers.hound-secure.rule=Host(`gardener.hound.23technologies.dev`)"
+      - "traefik.http.routers.hound-secure.tls=true"
+      - "traefik.http.routers.hound-secure.tls.certresolver=http"
+
+volumes:
+  hound:
+  acme:
