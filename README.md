@@ -1,4 +1,4 @@
-# terraform-configurations
+# terraform-configurations-openstack
 
 Simple framework based on Terraform, Ansible and Docker Compose to manage standalone
 services on an OpenStack cloud, independent of Kubernetes.
