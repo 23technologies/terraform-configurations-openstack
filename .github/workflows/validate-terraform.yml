@@ -1,19 +1,21 @@
 ---
-name: Verify terraform
+name: Validate terraform
 
 on:
   push:
     paths:
       - '**/*.tf'
-      - '.github/workflows/terraform.yml'
+      - '.github/workflows/validate-terraform.yml'
   pull_request:
     paths:
       - '**/*.tf'
-      - '.github/workflows/terraform.yml'
+      - '.github/workflows/validate-terraform.yml'
 
 jobs:
-  default:
+  validate-terraform:
+
     runs-on: ubuntu-latest
+
     strategy:
       matrix:
         terraform-version:
